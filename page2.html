@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign up 2</title>
+        <link rel="stylesheet" type="text/css" href="style2.css">
+    </head>
+    <body>
+        <form method="GET" action="./signup.html">
+            <fieldset>
+                <section>
+                    <aside>
+                            <img id="i1" src="dxc.jpg" height="33px"/><br><br>
+                            <span id="t1">Welcome to DXC</span><br><br>
+                            <a href="" class="profilelink"><img id="profile" src="profile.png"/><br></a>
+                            <p id="email">psaravanan4@dxc.com</p>
+                            <fieldset class="innerfieldset">
+                                <legend>
+                                    Phone number (optional)
+                                </legend>
+                                <input  type="text" id="num" name="num" pattern="[0-9]{2}[0-9]{10}">
+                            </fieldset>
+                            <p id="num1">We'll use your number for account security. It won't be visible <br>to others. Include country code before your number.</p><br>
+                            <input type="email" id="recover" placeholder="Recovery email address (optional)" required>
+                            <p id="num2">We'll use it to keep your account secure</p><br>
+                            <select id="month" required>
+                                <option value="" hidden>Month</option>
+                                <option value="January">January</option>
+                                <option value="February">February</option>
+                                <option value="March">March</option>
+                                <option value="April">April</option>
+                                <option value="May">May</option>
+                                <option value="June">June</option>
+                                <option value="July">July</option>
+                                <option value="August">August</option>
+                                <option value="September">September</option>
+                                <option value="October">October</option>
+                                <option value="November">November</option>
+                                <option value="December">December</option>
+                            </select>
+                            <input type="number" id="day" placeholder="Day" max="31" required>
+                            <input type="text" id="year" placeholder="Year" pattern=".{4}" required><br>
+                            <p id="birth">Your birthday</p><br>
+                            <select id="gender" required>
+                                <option value="" hidden>Gender</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </select>
+                            <br><br><br><br>
+                            <a href=""><b>Why we ask for this information</b></a><br><br><br>
+                            <div>
+                              <a href="./signup.html"><b>Back</b></a>
+                              <input type="submit" id="next" name="next" value="Next">
+                            </div>
+                    </aside>
+                    <article>
+                            <img id="lock" src="lock.jpg" height="200px" width="150px"/>
+                            <p id="t2">Your personal info is <br>private & safe</p>
+                    </article>
+                </section>
+            </fieldset>
+        </form>
+    </body>
+</html>

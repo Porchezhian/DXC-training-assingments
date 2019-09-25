@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign up 1</title>
+        <link rel="stylesheet" type="text/css" href="style1.css">
+    </head>
+    <body>
+        <form method="GET" action="./nextpage.html">
+            <fieldset>
+                <section>
+                    <aside>
+                            <img id="i1" src="dxc.jpg" height="33px"/><br><br>
+                            <span id="t1">Create your DXC Account</span><br><br><br>
+                            <input type="text" id="fname" name="fname" placeholder="First name" required>
+                            <input type="text" id="lname" name="lname" placeholder="Last name" required><br><br><br>
+                            <input type="email" id="uname" name="uname" placeholder="Username" required>
+                            <input type="text" id="sname" name="sname" value=@dxc.com disabled><br>
+                            <p id="i3">You can use letters, numbers & periods</p>
+                            <p id="i4"><b>Use my currrent email address instead</b></p>
+                            <input type="password" id="password" name="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                            <div style="display:inline-flex;">
+                              <input type="password" id="confirm" name="confirm" placeholder="Confirm" required>
+                              <img src="hide.png" width="25px" height="25px" style="padding-left:10px; padding-top:2px;"/>
+                            </div>
+                            <p id="i5">Use 8 or more characters with a mix of letters, numbers & <br>symbols</p><br><br><br>
+                            <div style="display: inline-flex;">
+                              <a href=""><b>Sign in instead</b></a>
+                              <input type="submit" id="next" name="next" value="Done">
+                            </div>
+                    </aside>
+                    <article>
+                            <img id="i2" src="dxclogo.jpg" height="150px" width="150px"/>
+                            <p id="t2">One account. All of DXC<br>applications working for you.</p>
+                    </article>
+                </section>
+            </fieldset>
+        </form>
+    </body>
+</html>
