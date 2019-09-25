@@ -1,0 +1,246 @@
+.logo{
+    border: 1px solid lightblue;
+    border-radius:8px;
+}
+.title{
+    font-size: 80px; 
+    margin-left: 50px; 
+    font-family:'Cute Font', cursive;
+}
+.tag{
+    font-size: 20px; 
+    margin-left: 55px; 
+    margin-top:-30px;
+}
+header{
+    width:1240px;
+    background-color: lightblue;
+    border:2px solid lightblue;
+    border-radius: 8px;
+}
+section{
+    display:inline-flex;
+    width:1240px;
+    height:990px;
+    background-color: lemonchiffon;
+    border:2px solid yellow;
+    border-radius:8px;
+}
+aside{
+    width:60%;
+    border-right: 1px solid yellow;
+}
+.asidediv{
+    padding-left:20px;
+}
+aside a{
+    text-decoration: none;
+    color:chocolate;
+    font-size: 15px;
+}
+table{
+    width:50%;
+}
+caption{
+    text-align: left; font-size: 20px;
+}
+.ojai{
+    font-size: 20px;
+}
+.northridge{
+    color:tomato; 
+    font-size:40px;
+    font-family:monospace;
+}
+.trail{
+    font-size: 25px;
+}
+.posted{
+    font-size: 15px;
+}
+.trailinfo{
+    text-align: justify;
+    padding-right:15px;
+}
+.author{
+    padding-left:10px;
+    padding-top:5px;
+}
+.about{
+    background-color: tan;
+    width:98%; 
+    height:150px;
+    border:1px solid tan;
+    border-radius:8px;
+}
+.aboutauthor{
+    text-align: justify;
+    padding-left:10px;
+    padding-right:15px;
+}
+.comments{
+    font-size:25px;
+}
+.comments span{
+    font-size:15px;
+}
+.commentbox{
+    background-color: gray; 
+    width:98%; 
+    height:135px;
+    border:1px solid lemonchiffon;
+    margin-top:-10px;
+    border-radius:8px;
+}
+.commentbox div{
+    background-color: rgb(30,30,30); 
+    width:99%; 
+    height:25px; 
+    border:1px solid rgb(30,30,30);border-radius:8px;margin-top:10px;margin-left: auto;margin-right: auto;
+}
+.authorname{
+    color:white;
+    font-size: 20px; 
+    padding-left:10px;
+    margin-top:1px;
+}
+.commentbox span{
+    font-size:15px;
+}
+.commentcontent{
+    text-align: justify;
+    padding-left:10px;
+    padding-right:10px;
+    color:whitesmoke;
+}
+article{
+    width:19%;
+    margin-left: 10px;
+}
+.reviews{
+    width:205%;
+    height:50px;
+}
+.reviews p{
+    color:black;
+    font-family:fantasy;
+    font-size:40px;
+    text-align: center;
+    margin-top: 1px;
+}
+.reviewbox{
+    background-color:tan; 
+    width:200%; 
+    height:500px;
+    border:1px solid tan;
+    border-radius: 8px;
+}
+.top{
+    margin-top:0%; 
+    padding-top:10px; 
+    font-size: 25px;
+}
+.bottom{
+    text-align: justify;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.reviewtitle{
+    padding-left:10px;
+}
+.reviewedby{
+    font-size: 18px; 
+    padding-left:11px;
+}
+.submittedon{
+    font-size: 13px; 
+    padding-left:70%;
+}
+.rentalbox{
+    background-color: #5BA5C9; 
+    width:200%; 
+    height:410px;
+    border:1px solid #5BA5C9;
+    border-radius: 8px;
+}
+.need{
+    font-family: cursive; 
+    padding-left:15px; 
+    padding-top:10px; 
+    font-size: 20px;
+}
+.rentalbox img{
+    display:block; 
+    margin-left: auto;
+    margin-right: auto;
+    border:2px solid white;
+    border-radius: 8px;
+}
+.rentalname{
+    font-family: cursive;
+    padding-left: 15px; 
+    color: red; 
+    font-size:15px;
+}
+.ad{
+    font-family: cursive;
+    padding-left: 15px; 
+    margin-top:-10px;
+}
+footer{
+    width:1240px;
+    background-color: lightblue;
+    border:2px solid lightblue;
+    border-radius: 8px;
+}
+.footerleft{
+    display: inline-block;
+    width: 40%;
+}
+.footerright{
+    display:inline-block;
+    text-align: right;
+    width: 58%;
+}
+.marginleft{
+    margin-left: 10px;
+}
+.terms{
+    color:red;
+    text-decoration: none;
+}
+.footerleft div{
+    line-height: 0%
+}
+.footerright a{
+    text-decoration: none;
+    color:red;
+}
+.innav{
+     text-decoration: none;
+     color: black;
+     margin-left: 55px;
+     background-color: #F2E856;
+     border: 1px solid #F2E856;
+     border-radius:5px;
+}
+#h1{
+    display:inline-block;
+    margin-left: 20px;
+    margin-top:10px;
+} 
+#h2{
+    display:inline-block;
+    margin-top: 20px; 
+    line-height: 0%;
+}
+hr{
+    border-width:1px; 
+    visibility: hidden;
+}
+tr:nth-child(odd){
+    background-color: tan;
+}
+tr:nth-child(even){
+    background-color: #B9F1E5;
+}
