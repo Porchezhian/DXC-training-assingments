@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Multiplication</title>
+        <script>
+            function multiply()
+            {
+                var i;
+                var mul = Number(prompt("Enter the number for the multiplication table:"));
+                var row = Number(prompt("Enter the no.of rows:"));
+                for(i=0;i<=row;i++)
+                {
+                    var result = mul*i;
+                    document.write(mul+" x "+i+" = "+result+"<br>");
+                }
+            }
+        </script>
+    </head>
+    <body onload="multiply()">
+    </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>triangle</title>
+        <script>
+            function triangle()
+            {
+                var i,j,k;
+                 var type = prompt("Enter the type of triangle(equi/iso):");
+                 var num = Number(prompt("Enter the no.of rows:"));
+                 if(type=="iso")
+                 {
+                    for(i=0;i<num;i++)
+                    {
+                     for(j=0;j<=i;j++)
+                     {
+                         document.write("*");
+                     }
+                     document.write("<br>");
+                    }
+                 }
+                 if(type=="equi")
+                 {
+                     for(i=1;i<=num;i++)
+                     {
+                         for(k=1;k<=num-i;k++)
+                         {
+                             document.write("&nbsp;&nbsp;");
+                         }
+                         for(j=1;j<=(2*i)-1;j++)
+                         {
+                             document.write("*");
+                         }
+                         document.write("<br>");
+                     }
+                 }
+             } 
+         </script>
+    </head>
+    <body>
+        <button onclick="triangle()">get triangle</button>
+    </body>
+</html>

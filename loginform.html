@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>login-form</title>
+        <link href="./loginformstyle.css" type="text/css" rel="stylesheet">
+        <script>
+            function validate()
+            {
+                if(document.getElementById("uname").value!="" && document.getElementById("pwd").value!="")
+                {
+
+                 if(document.getElementById("uname").value=="System" && document.getElementById("pwd").value=="Admin")
+                 {
+                    
+                    document.getElementById("text").innerHTML = "successful login";
+                    document.getElementById("text").style.color = "green";
+                    document.getElementById("uname").value = "";
+                    document.getElementById("pwd").value = "";
+                 }
+                 else
+                 {
+                    document.getElementById("text").innerHTML = "invalid credentials";
+                    document.getElementById("text").style.color = "red";
+                    document.getElementById("uname").value = "";
+                    document.getElementById("pwd").value = "";
+                 }
+                }
+            }
+        </script>
+        <style>
+            .container{
+                width:250px;
+                margin:150px auto;
+            }
+            fieldset{
+                margin:0 auto;
+                border-radius:10px;
+            }
+            input{
+                border-radius:5px;
+            }
+            #login{
+                padding-left:103px;
+            }
+            .username label, #uname, .password label, #pwd{
+                margin-left:26px;
+            }
+            #button{
+                border-radius:5px;
+                margin-left:80px;
+            }
+            #text{
+                margin:5px auto;
+                font-weight:bold;
+                width:150px;
+                background-color: lemonchiffon;
+                text-align:center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <label for="field" id="login"><b>Login</b></label>
+            <fieldset id="field">  
+              <form action="getcredentials.html">
+              <div class="username">
+                <label for="uname"><b>Username:</b></label><br>
+                <input type="text" name="uname" id="uname" placeholder="Enter your username" required>
+              </div>
+              <br>
+              <div class="password">
+                <label for="pwd"><b>Password:</b></label><br>
+                <input type="password" name="pwd" id="pwd" placeholder="Enter your password" required>
+              </div>
+            </form>
+              <br>
+              <input type="submit" id="button" onclick="validate()" value="submit">
+        </fieldset>
+        <h3 id="text"></h3>
+    </div>
+    </body>
+</html>
