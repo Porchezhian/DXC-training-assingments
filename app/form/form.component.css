@@ -1,0 +1,30 @@
+div{
+    width:100%
+}
+h2{
+    width:100px;
+    margin:10px auto;
+}
+p{
+    width:250px;
+    margin:5px auto;
+}
+fieldset{
+    width:300px;
+    margin:auto;
+}
+.first{
+    margin-left:20px;
+}
+.last{
+    margin-left:22px;
+}
+.email{
+    margin-left:54px;
+}
+.password{
+    margin-left:30px;
+}
+.button{
+    margin-left:115px;
+}

@@ -1,0 +1,30 @@
+<div>
+<h2>FORM</h2>
+<p>Open console to view the submission</p>
+<fieldset>
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+    <label>
+        First Name:
+        <input class="first" type="text" formControlName="firstname">
+    </label>
+    <br><br>
+    <label>
+        Last Name:
+        <input class="last" type="text" formControlName="lastname">
+    </label>
+    <br><br>
+    <label>
+        Email:
+        <input class="email" type="email" formControlName="email">
+        </label>
+        <br><br>
+    <label>
+        Password:
+        <input class="password" type="password" formControlName="password">
+    </label>
+    <br><br>
+    <button type="submit" class="button"
+    [disabled]="!profileForm.valid">Submit</button>
+</form>
+</fieldset>
+</div>
