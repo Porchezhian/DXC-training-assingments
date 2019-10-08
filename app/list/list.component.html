@@ -1,0 +1,42 @@
+<div>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Department ID</th> <th>Name</th> <th>GroupName</th> <th>ModifiedDate</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let emp of emplist; let i=index">
+                <td>{{emp.did}}</td>
+                <td>{{emp.name}}</td>
+                <td>{{emp.group}}</td>
+                <td>{{emp.modifiedDate | date:'dd-MM-yyyy | hh:mm:ss'}}</td>
+                <td><button (click)="edit(i)">Edit</button></td>
+                <td><button (click)="delete(i)">Delete</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div *ngIf="updateDisplay">
+        <form>
+                <h2 style="margin-left:50px">Update</h2>
+            <div class="form-group">
+                <label for="did">Department ID
+                    <input type="number" id="did" name="did" class="form-control" [(ngModel)]="employee.did">
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="name">Name
+                    <input type="text" id="name" name="name" class="form-control" [(ngModel)]="employee.name">
+                </label>
+            </div>
+            <div class="form-group">
+                    <label for="group">GroupName
+                        <input type="text" id="for" name="for" class="form-control" [(ngModel)]="employee.group">
+                    </label>
+                </div>
+                <button style="margin-left:70px; margin-bottom:10px;" (click)="update()">Update</button>
+        </form>
+    </div>
+        

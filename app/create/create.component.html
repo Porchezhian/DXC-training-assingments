@@ -1,0 +1,21 @@
+<div>
+        <form>
+                <h2 style="margin-left:60px">Create</h2>
+            <div class="form-group">
+                <label for="did">Department ID
+                    <input type="number" id="did" name="did" class="form-control" [(ngModel)]="new_employee.did">
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="name">Name
+                    <input type="text" id="name" name="name" class="form-control" [(ngModel)]="new_employee.name">
+                </label>
+            </div>
+            <div class="form-group">
+                    <label for="group">GroupName
+                        <input type="text" id="for" name="for" class="form-control" [(ngModel)]="new_employee.group">
+                    </label>
+                </div>
+                <button style="margin-left:80px" (click)="add()">Create</button>
+        </form>
+    </div>
