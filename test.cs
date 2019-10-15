@@ -23,7 +23,7 @@ namespace ConsoleApp1
                 total[i] = 0;
                 Console.WriteLine("Enter the name of the student");
                 student[i] = Console.ReadLine();
-                Console.WriteLine("Enter the five subject marks of the student:");
+                Console.WriteLine("Enter the five subject marks of the student(out of 100):");
                 for (int j=0;j<5;j++)
                 {
                     marks[i, j] = int.Parse(Console.ReadLine());
