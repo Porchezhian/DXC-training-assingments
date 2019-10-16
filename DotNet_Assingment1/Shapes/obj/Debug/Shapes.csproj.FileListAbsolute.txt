@@ -1,0 +1,6 @@
+C:\Users\psaravanan4\source\repos\DotNet_Assingment1\Shapes\obj\Debug\Shapes.csprojAssemblyReference.cache
+C:\Users\psaravanan4\source\repos\DotNet_Assingment1\Shapes\bin\Debug\Shapes.exe.config
+C:\Users\psaravanan4\source\repos\DotNet_Assingment1\Shapes\bin\Debug\Shapes.exe
+C:\Users\psaravanan4\source\repos\DotNet_Assingment1\Shapes\bin\Debug\Shapes.pdb
+C:\Users\psaravanan4\source\repos\DotNet_Assingment1\Shapes\obj\Debug\Shapes.exe
+C:\Users\psaravanan4\source\repos\DotNet_Assingment1\Shapes\obj\Debug\Shapes.pdb

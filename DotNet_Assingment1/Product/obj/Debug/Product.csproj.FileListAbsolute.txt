@@ -1,0 +1,6 @@
+C:\Users\psaravanan4\source\repos\DotNet_Assingment1\Product\bin\Debug\Product.exe.config
+C:\Users\psaravanan4\source\repos\DotNet_Assingment1\Product\bin\Debug\Product.exe
+C:\Users\psaravanan4\source\repos\DotNet_Assingment1\Product\bin\Debug\Product.pdb
+C:\Users\psaravanan4\source\repos\DotNet_Assingment1\Product\obj\Debug\Product.exe
+C:\Users\psaravanan4\source\repos\DotNet_Assingment1\Product\obj\Debug\Product.pdb
+C:\Users\psaravanan4\source\repos\DotNet_Assingment1\Product\obj\Debug\Product.csprojAssemblyReference.cache
