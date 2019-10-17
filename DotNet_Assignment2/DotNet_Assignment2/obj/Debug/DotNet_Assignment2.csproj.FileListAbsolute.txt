@@ -1,0 +1,6 @@
+C:\Users\psaravanan4\source\repos\DotNet_Assignment2\DotNet_Assignment2\bin\Debug\DotNet_Assignment2.exe.config
+C:\Users\psaravanan4\source\repos\DotNet_Assignment2\DotNet_Assignment2\bin\Debug\DotNet_Assignment2.exe
+C:\Users\psaravanan4\source\repos\DotNet_Assignment2\DotNet_Assignment2\bin\Debug\DotNet_Assignment2.pdb
+C:\Users\psaravanan4\source\repos\DotNet_Assignment2\DotNet_Assignment2\obj\Debug\DotNet_Assignment2.csprojAssemblyReference.cache
+C:\Users\psaravanan4\source\repos\DotNet_Assignment2\DotNet_Assignment2\obj\Debug\DotNet_Assignment2.exe
+C:\Users\psaravanan4\source\repos\DotNet_Assignment2\DotNet_Assignment2\obj\Debug\DotNet_Assignment2.pdb
