@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,8 +8,30 @@ namespace DotNet_Assignment3
 {
     class crud
     {
+        public static void InsertInOrder(ref List<Employee> employeelist, ref Employee new_employee)
+        {
+            bool done = false;
+            foreach (Employee item in employeelist)
+            {
+                if (item.Id < new_employee.Id)
+                {
+
+                }
+                else
+                {
+                    int index = employeelist.FindIndex(e => e.Id == item.Id);
+                    employeelist.Insert(index, new_employee);
+                    done = true;
+                    break;
+                }
+            }
+            if (done == false)
+                employeelist.Add(new_employee);
+        }
+
         public static void ReadEmployee(List<Employee> employeelist)
         {
+
             foreach (Employee item in employeelist)
                 Console.WriteLine($"{item.Id} - {item.Name} - {item.Location} - {item.Salary} - {item.Designation}");
         }
@@ -20,6 +42,14 @@ namespace DotNet_Assignment3
             string name, location, designation;
             Console.WriteLine("Enter Employee Id:");
             id = int.Parse(Console.ReadLine());
+            foreach(Employee item in employeelist)
+            {
+                if(id == item.Id)
+                {
+                    Console.WriteLine("Id already exists");
+                    return;
+                }
+            }
             Console.WriteLine("\nEnter Employee Name:");
             name = Console.ReadLine();
             Console.WriteLine("\nEnter Employee Location:");
@@ -29,7 +59,7 @@ namespace DotNet_Assignment3
             Console.WriteLine("\nEnter Employee Salary:");
             salary = int.Parse(Console.ReadLine());
             Employee new_employee = new Employee { Id = id, Name = name, Designation = designation, Location = location, Salary = salary };
-            employeelist.Add(new_employee);
+            InsertInOrder(ref employeelist, ref new_employee);
             Console.Clear();
             Program.DisplayMenu();
             ReadEmployee(employeelist);
@@ -37,7 +67,7 @@ namespace DotNet_Assignment3
 
         public static void UpdateEmployee(ref List<Employee> employeelist)
         {
-            int id, index, int_value = 0;
+            int id, int_value = 0;
             string str_value = "";
             string field;
             Employee employee, new_employee;
@@ -88,9 +118,8 @@ namespace DotNet_Assignment3
                 Console.WriteLine("Field does not exist");
                 return;
             }
-            index = employeelist.FindIndex(e => e == employee);
             employeelist.Remove(employee);
-            employeelist.Insert(index, new_employee);
+            InsertInOrder(ref employeelist, ref new_employee);
             Console.Clear();
             Program.DisplayMenu();
             ReadEmployee(employeelist);
@@ -101,10 +130,18 @@ namespace DotNet_Assignment3
             int id;
             Console.WriteLine("Enter the Id of the employee to be deleted");
             id = int.Parse(Console.ReadLine());
-            employeelist.Remove(employeelist.Find(e => e.Id == id));
-            Console.Clear();
-            Program.DisplayMenu();
-            ReadEmployee(employeelist);
+            foreach(Employee item in employeelist)
+            {
+                if(id == item.Id)
+                {
+                    employeelist.Remove(employeelist.Find(e => e.Id == id));
+                    Console.Clear();
+                    Program.DisplayMenu();
+                    ReadEmployee(employeelist);
+                    return;
+                }
+            }
+            Console.WriteLine("Id does not exist");
         }
     }
 }
