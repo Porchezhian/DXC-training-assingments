@@ -1,0 +1,9 @@
+C:\Users\psaravanan4\source\repos\DotNet_Assessment1\Shopping\bin\Debug\Shopping.exe.config
+C:\Users\psaravanan4\source\repos\DotNet_Assessment1\Shopping\bin\Debug\Shopping.exe
+C:\Users\psaravanan4\source\repos\DotNet_Assessment1\Shopping\bin\Debug\Shopping.pdb
+C:\Users\psaravanan4\source\repos\DotNet_Assessment1\Shopping\bin\Debug\ShoppingServices.dll
+C:\Users\psaravanan4\source\repos\DotNet_Assessment1\Shopping\bin\Debug\ShoppingServices.pdb
+C:\Users\psaravanan4\source\repos\DotNet_Assessment1\Shopping\obj\Debug\Shopping.csprojAssemblyReference.cache
+C:\Users\psaravanan4\source\repos\DotNet_Assessment1\Shopping\obj\Debug\Shopping.csproj.CopyComplete
+C:\Users\psaravanan4\source\repos\DotNet_Assessment1\Shopping\obj\Debug\Shopping.exe
+C:\Users\psaravanan4\source\repos\DotNet_Assessment1\Shopping\obj\Debug\Shopping.pdb

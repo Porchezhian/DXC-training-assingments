@@ -1,0 +1,5 @@
+C:\Users\psaravanan4\source\repos\DotNet_Assessment1\ShoppingServices\bin\Debug\ShoppingServices.dll
+C:\Users\psaravanan4\source\repos\DotNet_Assessment1\ShoppingServices\bin\Debug\ShoppingServices.pdb
+C:\Users\psaravanan4\source\repos\DotNet_Assessment1\ShoppingServices\obj\Debug\ShoppingServices.csprojAssemblyReference.cache
+C:\Users\psaravanan4\source\repos\DotNet_Assessment1\ShoppingServices\obj\Debug\ShoppingServices.dll
+C:\Users\psaravanan4\source\repos\DotNet_Assessment1\ShoppingServices\obj\Debug\ShoppingServices.pdb
