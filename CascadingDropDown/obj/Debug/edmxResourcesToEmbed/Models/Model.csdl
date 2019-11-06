@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CountriesModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tblCountry">
+    <Key>
+      <PropertyRef Name="country_id" />
+    </Key>
+    <Property Name="country_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="country" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="tblStates" Relationship="Self.FK__tblState__countr__5BE2A6F2" FromRole="tblCountry" ToRole="tblState" />
+  </EntityType>
+  <EntityType Name="tblState">
+    <Key>
+      <PropertyRef Name="state_id" />
+    </Key>
+    <Property Name="state_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="country_id" Type="Int32" />
+    <Property Name="state" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="tblCountry" Relationship="Self.FK__tblState__countr__5BE2A6F2" FromRole="tblState" ToRole="tblCountry" />
+  </EntityType>
+  <Association Name="FK__tblState__countr__5BE2A6F2">
+    <End Role="tblCountry" Type="Self.tblCountry" Multiplicity="0..1" />
+    <End Role="tblState" Type="Self.tblState" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCountry">
+        <PropertyRef Name="country_id" />
+      </Principal>
+      <Dependent Role="tblState">
+        <PropertyRef Name="country_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="CountriesEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tblCountries" EntityType="Self.tblCountry" />
+    <EntitySet Name="tblStates" EntityType="Self.tblState" />
+    <AssociationSet Name="FK__tblState__countr__5BE2A6F2" Association="Self.FK__tblState__countr__5BE2A6F2">
+      <End Role="tblCountry" EntitySet="tblCountries" />
+      <End Role="tblState" EntitySet="tblStates" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
