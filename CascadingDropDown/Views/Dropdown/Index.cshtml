@@ -1,0 +1,11 @@
+﻿@model CascadedDropDown.Models.tblCountry
+
+@using (Html.BeginForm())
+{
+    <br />
+    @Html.DropDownListFor(model => model.country, ViewBag.countries as SelectList, "Select a country", new { @onChange = @"form.submit();"});
+    <br /><br />
+    @Html.DropDownList("states", ViewBag.states as SelectList, "select a state");
+    <br />
+    <input type="submit" value="submit"/>
+}
