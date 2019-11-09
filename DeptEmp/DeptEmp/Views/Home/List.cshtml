@@ -1,0 +1,50 @@
+﻿@model IEnumerable<DeptEmp.Models.Employee>
+
+@if (Model.Count() != 0)
+{
+    <table class="table table-bordered">
+        <tr>
+            <th style="text-align:center">
+                @Html.DisplayName("Department")
+            </th>
+            <th style="text-align:center">
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th style="text-align:center">
+                @Html.DisplayNameFor(model => model.Age)
+            </th>
+            <th style="text-align:center">
+                @Html.DisplayNameFor(model => model.Location)
+            </th>
+        </tr>
+        <tr>
+
+            <td rowspan=@ViewBag.count style="text-align:center">
+                @ViewBag.department
+            </td>
+            <td>
+                @foreach (var item in Model)
+                {
+            <tr>
+                <td style="text-align:center">
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td style="text-align:center">
+                    @Html.DisplayFor(modelItem => item.Age)
+                </td>
+                <td style="text-align:center">
+                    @Html.DisplayFor(modelItem => item.Location)
+                </td>
+            </tr>
+        }
+                </td>
+                </tr>
+
+            </table>
+        }
+        else
+        {
+            <h2>No Employee available in the @ViewBag.department department</h2>
+            <h3>Fill the table with data in MS SQL</h3>
+        }
+
